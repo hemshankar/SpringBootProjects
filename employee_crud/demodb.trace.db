@@ -1,0 +1,6 @@
+2022-03-13 17:10:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "EMP" not found; SQL statement:
+select employee0_.id as id1_0_0_, employee0_.name as name2_0_0_ from emp employee0_ where employee0_.id=? [42102-200]
+2022-03-13 17:15:01 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "EMP" not found; SQL statement:
+insert into emp (id, name) values (default, ?) [42102-200]
