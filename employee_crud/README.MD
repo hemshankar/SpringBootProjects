@@ -16,6 +16,6 @@ Steps to use:
 4. Call following APIs
 	1. GET /employee -> lists all the employees 
 	2. GET /employee/{id} -> returns details of employee with id: id
-	2. POST {"name": "Emp Name"} /employee -> adds Employee
-	3. PUT  {"name": "New Name"} /employee/{id} -> updates Employee with id: id 
+	2. POST /employee {"name": "Emp Name"} /employee -> adds Employee
+	3. PUT  /employee/id {"name": "New Name"} /employee/{id} -> updates Employee with id: id 
 	4. DELETE /employee/id -> Deletes the employee with ID: id 
