@@ -6,10 +6,10 @@ import com.hem.testspring.model.Employee;
 
 public interface EmployeeService {
 
-	public Employee saveEmployee(Employee e);
-	public Employee getEmployee(Integer id);
-	public List<Employee> getAllEmployees();
-	public Employee updateEmployee(Integer id, Employee emp);
-	public Employee deleteEmployee(Integer id);
-	
+	Employee saveEmployee(Employee e);
+	Employee getEmployee(Integer id);
+	List<Employee> getAllEmployees();
+	Employee updateEmployee(Integer id, Employee emp);
+	Employee deleteEmployee(Integer id);
+    void addImage(Integer id, String fileName);
 }

@@ -47,4 +47,11 @@ public class EmployeeServiceImpl implements EmployeeService {
 		eRepo.deleteById(id);
 		return e;
 	}
+
+	@Override
+	public void addImage(Integer id, String fileName) {
+		Employee e = eRepo.findById(id).orElseThrow(() -> new ResourceNotFoundException(id));
+		e.setImage(fileName);
+		eRepo.save(e);
+	}
 }
